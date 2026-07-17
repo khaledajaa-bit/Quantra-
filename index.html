@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quantra — Autonomous AI Trading Agent</title>
+<meta name="description" content="Quantra is an autonomous AI trading agent scanning markets and executing on-chain, live on Robinhood Chain via Virtuals Protocol.">
+<link rel="icon" type="image/png" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="grain"></div>
+
+<!-- ================= NAV ================= -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#top" class="nav__logo">
+      <span class="nav__logo-mark" aria-hidden="true">
+        <img src="assets/logo.png" alt="" width="28" height="28">
+      </span>
+      Quantra
+    </a>
+
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#capabilities">Capabilities</a>
+      <a href="#pipeline">How it works</a>
+      <a href="#token">Token</a>
+      <a href="#console">Live agent</a>
+    </nav>
+
+    <div class="nav__actions">
+      <a href="#token" class="btn btn--ghost">$QNTR</a>
+      <a href="#contact" class="btn btn--solid">Launch App</a>
+    </div>
+
+    <button class="nav__burger" id="burger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ================= HERO ================= -->
+  <section class="hero">
+    <div class="hero__bg" aria-hidden="true">
+      <img src="assets/hero-brain.png" alt="" class="hero__brain">
+      <div class="hero__vignette"></div>
+    </div>
+
+    <div class="hero__content">
+      <p class="eyebrow" data-reveal>
+        <span class="eyebrow__dot"></span>
+        AI Trading Agent · Live on Robinhood Chain
+      </p>
+
+      <h1 class="hero__title" data-reveal>
+        Autonomous alpha,<br>running <span class="text-accent">24/7</span>.
+      </h1>
+
+      <p class="hero__sub" data-reveal>
+        Quantra is an AI agent that scans markets, generates signals and executes
+        trades on-chain without sleep, without emotion, and without missing a candle.
+        Co-owned by its community, deployed on Robinhood Chain through Virtuals Protocol.
+      </p>
+
+      <div class="hero__cta" data-reveal>
+        <a href="#token" class="btn btn--solid btn--lg">Get $QNTR</a>
+        <a href="#console" class="btn btn--outline btn--lg">Watch the agent think</a>
+      </div>
+
+      <dl class="hero__stats" data-reveal>
+        <div class="stat">
+          <dt>Markets scanned</dt>
+          <dd><span class="counter" data-target="214">0</span>+</dd>
+        </div>
+        <div class="stat">
+          <dt>Agent uptime</dt>
+          <dd><span class="counter" data-target="99" data-suffix=".9">0</span>%</dd>
+        </div>
+        <div class="stat">
+          <dt>Chain</dt>
+          <dd class="stat__text">Robinhood</dd>
+        </div>
+      </dl>
+    </div>
+
+    <a href="#capabilities" class="scroll-cue" aria-label="Scroll to content">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- ================= TICKER MARQUEE ================= -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span class="marquee__item">SOL/USDC <em class="up">▲ 4.2%</em></span>
+      <span class="marquee__item">QNTR/VIRTUAL <em class="up">▲ 12.8%</em></span>
+      <span class="marquee__item">ETH/USDC <em class="down">▼ 1.1%</em></span>
+      <span class="marquee__item">BTC/USDC <em class="up">▲ 0.6%</em></span>
+      <span class="marquee__item">VIRTUAL/USDC <em class="up">▲ 3.9%</em></span>
+      <span class="marquee__item">AVAX/USDC <em class="down">▼ 2.4%</em></span>
+      <!-- duplicate for seamless loop -->
+      <span class="marquee__item">SOL/USDC <em class="up">▲ 4.2%</em></span>
+      <span class="marquee__item">QNTR/VIRTUAL <em class="up">▲ 12.8%</em></span>
+      <span class="marquee__item">ETH/USDC <em class="down">▼ 1.1%</em></span>
+      <span class="marquee__item">BTC/USDC <em class="up">▲ 0.6%</em></span>
+      <span class="marquee__item">VIRTUAL/USDC <em class="up">▲ 3.9%</em></span>
+      <span class="marquee__item">AVAX/USDC <em class="down">▼ 2.4%</em></span>
+    </div>
+  </div>
+
+  <!-- ================= CAPABILITIES ================= -->
+  <section class="section" id="capabilities">
+    <div class="section__head">
+      <p class="eyebrow" data-reveal><span class="eyebrow__dot"></span>Capabilities</p>
+      <h2 data-reveal>Four systems. One agent.</h2>
+      <p class="section__sub" data-reveal>Every trade Quantra makes passes through the same core loop, running continuously across every market it watches.</p>
+    </div>
+
+    <div class="grid grid--4">
+      <article class="card" data-reveal>
+        <div class="card__icon">
+          <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3" stroke-linecap="round"/></svg>
+        </div>
+        <h3>Market scanning</h3>
+        <p>Continuously reads order books and price action across multiple pairs, flagging shifts in volume and volatility as they happen.</p>
+      </article>
+
+      <article class="card" data-reveal>
+        <div class="card__icon">
+          <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 17l6-6 4 4 8-8" stroke-linecap="round" stroke-linejoin="round"/><path d="M15 7h6v6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Signal generation</h3>
+        <p>Turns raw market data into ranked, confidence-scored signals, filtering out noise before a single trade is considered.</p>
+      </article>
+
+      <article class="card" data-reveal>
+        <div class="card__icon">
+          <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8Z" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Autonomous execution</h3>
+        <p>Places and manages trades on-chain directly, with no manual approval step standing between signal and action.</p>
+      </article>
+
+      <article class="card" data-reveal>
+        <div class="card__icon">
+          <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3 4 6v6c0 5 3.4 8.5 8 9 4.6-.5 8-4 8-9V6l-8-3Z" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Risk management</h3>
+        <p>Sizes every position against account exposure and market conditions, and stands down when conditions turn unclear.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ================= PIPELINE ================= -->
+  <section class="section section--alt" id="pipeline">
+    <div class="section__head">
+      <p class="eyebrow" data-reveal><span class="eyebrow__dot"></span>How it works</p>
+      <h2 data-reveal>One loop, repeated every cycle.</h2>
+    </div>
+
+    <ol class="pipeline">
+      <li class="pipeline__step" data-reveal>
+        <span class="pipeline__index">01</span>
+        <h3>Perceive</h3>
+        <p>Ingests live price feeds, liquidity data and on-chain activity across every market it's assigned to watch.</p>
+      </li>
+      <li class="pipeline__step" data-reveal>
+        <span class="pipeline__index">02</span>
+        <h3>Decide</h3>
+        <p>Weighs each opportunity against its risk model and current exposure, and scores its confidence in the move.</p>
+      </li>
+      <li class="pipeline__step" data-reveal>
+        <span class="pipeline__index">03</span>
+        <h3>Execute</h3>
+        <p>Sends the trade on-chain the moment confidence clears its threshold — no queue, no delay.</p>
+      </li>
+      <li class="pipeline__step" data-reveal>
+        <span class="pipeline__index">04</span>
+        <h3>Report</h3>
+        <p>Logs the reasoning and outcome publicly, so every decision the agent makes stays auditable.</p>
+      </li>
+    </ol>
+  </section>
+
+  <!-- ================= LIVE CONSOLE (signature element) ================= -->
+  <section class="section" id="console">
+    <div class="section__head">
+      <p class="eyebrow" data-reveal><span class="eyebrow__dot"></span>Live agent</p>
+      <h2 data-reveal>Watch Quantra think.</h2>
+      <p class="section__sub" data-reveal>A simulated feed of the reasoning loop running under the hood — the real thing streams from the deployed agent.</p>
+    </div>
+
+    <div class="console" data-reveal>
+      <div class="console__bar">
+        <span class="console__dot"></span>
+        <span class="console__dot"></span>
+        <span class="console__dot"></span>
+        <span class="console__title">quantra-agent — reasoning stream</span>
+      </div>
+      <div class="console__body" id="consoleBody">
+        <p class="console__line"><span class="caret">_</span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= TOKEN ================= -->
+  <section class="section section--alt" id="token">
+    <div class="token">
+      <div class="token__copy">
+        <p class="eyebrow" data-reveal><span class="eyebrow__dot"></span>Token</p>
+        <h2 data-reveal>$QNTR runs the agent.</h2>
+        <p class="section__sub" data-reveal>
+          Quantra is tokenized and co-owned through Virtuals Protocol on Robinhood Chain.
+          Holding $QNTR ties you to the agent's on-chain activity and its ongoing development.
+        </p>
+
+        <div class="token__meta" data-reveal>
+          <div class="token__row">
+            <span>Ticker</span>
+            <strong>$QNTR</strong>
+          </div>
+          <div class="token__row">
+            <span>Chain</span>
+            <strong>Robinhood Chain</strong>
+          </div>
+          <div class="token__row">
+            <span>Launchpad</span>
+            <strong>Virtuals Protocol</strong>
+          </div>
+          <div class="token__row">
+            <span>Contract</span>
+            <strong class="token__addr" id="tokenAddr">0x0000…ADD_CONTRACT</strong>
+          </div>
+        </div>
+
+        <div class="hero__cta" data-reveal>
+          <button class="btn btn--solid btn--lg" id="copyAddr">Copy contract address</button>
+          <a href="#" class="btn btn--outline btn--lg">View on Virtuals</a>
+        </div>
+      </div>
+
+      <div class="token__visual" data-reveal aria-hidden="true">
+        <div class="token__ring">
+          <span class="token__symbol">Q</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT / CTA ================= -->
+  <section class="cta" id="contact">
+    <div class="cta__inner" data-reveal>
+      <h2>Put an agent on your side of the market.</h2>
+      <p>No dashboards to babysit. Quantra runs whether you're watching or not.</p>
+      <div class="hero__cta">
+        <a href="#token" class="btn btn--solid btn--lg">Get $QNTR</a>
+        <a href="mailto:hello@quantra.ai" class="btn btn--outline btn--lg">Contact the team</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="footer__inner">
+    <a href="#top" class="nav__logo">
+      <span class="nav__logo-mark" aria-hidden="true">
+        <img src="assets/logo.png" alt="" width="24" height="24">
+      </span>
+      Quantra
+    </a>
+    <p class="footer__tag">Autonomous AI trading agent · Robinhood Chain</p>
+    <div class="footer__links">
+      <a href="#" aria-label="X / Twitter">X</a>
+      <a href="#" aria-label="Telegram">Telegram</a>
+      <a href="#" aria-label="Docs">Docs</a>
+      <a href="#" aria-label="Virtuals Protocol">Virtuals</a>
+    </div>
+    <p class="footer__copy">© 2026 Quantra. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
